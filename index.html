@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-Driven Recipe Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Driven Recipe Generator</h1>
+        <form id="ingredient-form">
+            <label for="ingredients">Enter ingredients (comma separated):</label>
+            <input type="text" id="ingredients" name="ingredients" placeholder="e.g. broccoli, chicken, rice" required />
+            <button type="submit">Generate Recipe</button>
+        </form>
+        <div id="recipe-output" class="hidden">
+            <h2>Generated Recipe</h2>
+            <div id="recipe-steps"></div>
+            <div id="timer-section" class="hidden">
+                <h3>Cooking Timer</h3>
+                <div id="timer-display">00:00</div>
+                <button id="start-timer">Start Timer</button>
+                <button id="reset-timer">Reset Timer</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
